@@ -112,6 +112,89 @@
     content: "";
 }
 
+.box {
+    width: 20%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.buttontemp {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid rgba(255, 166, 0, 0);
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.buttontemp:hover {
+    background: rgba(255, 166, 0, 0);
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Arial, Arial, Arial;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: orange;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* These are the rules you are looking for. */
+.overlay {
+    transition: opacity 500ms;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.overlay:target {
+    opacity: 0;
+    pointer-events: none;
+}
+
 </style>
 
 <body id="top">
@@ -167,7 +250,7 @@
 	</header> <!-- end header -->
 
 
-   <!-- home
+	<!-- home
    ================================================== -->
    <section id="home">
 
@@ -214,6 +297,22 @@
    <section id="about">
 
    	<div class="about-profile-bg"></div>
+
+	   <div class="box">
+		<!-- This shows the popup. -->
+		<a class="buttontemp" href="#popup"><i class='fa fa-exclamation-triangle' style='font-size:36px'></i></a>
+	</div> 
+	
+	<div id="popup1" class="overlay">
+		<div class="popup" >
+			<h2>Before you go ahead</h2>
+			<!-- This hides it. -->
+			<a class="close" href="#popup1">×</a>
+			<div class="content">
+				Thanks for Visiting. The website is going through changes everyday. So please bear with me if something looks strange.  
+			</div>
+		</div>
+	</div>
 
    	<div class="about-wrap">
 
@@ -359,7 +458,7 @@
     	<div class="row narrow section-intro with-bottom-sep">
     		<div class="col-twelve">
     			<h3 class="animate-this">Personal Projects</h3>
- 	   		<h1 class="animate-this">I lhave some Personal projects to put for display.</h1>
+ 	   		<h1 class="animate-this">I have some Personal projects to put for display.</h1>
  	   		<h2 class="animate-this">... have a look at them with a pinch of salt</h2>
  	   		<p class="lead animate-this">Click to view the dashboards and prediction models...  </p>
     		</div>
@@ -746,9 +845,9 @@
 		<div class="row narrow section-intro">
    		<div class="col-twelve">
    			<h3 class="animate-this">Contact</h3>
-   			<h1 class="animate-this">I'm Available for full time work. Feel free to Contact Me.</h1>
+   			<h2 class="animate-this">I'm Available for full time work. Feel free to Contact Me.</h2>
 
-   			<p class="lead animate-this">Use this space below to convey your message to me. I promise I reply pretty fast!</p>
+   			<p class="lead animate-this">Use this space below to convey your message.</p>
    		</div>
    	</div> <!-- end section-intro -->
 
@@ -912,7 +1011,7 @@
    <script src="js/9648-js-main.js"></script>
 
 
-
+   
   
 
 </body>
