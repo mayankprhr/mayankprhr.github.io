@@ -993,7 +993,14 @@
 
       	<div class="col-twelve tab-full">
 	      	<div class="copyright">
-		        	<span>No &copy; Copyright Intended</span>
+		        	<span>No</span> <button id="reset" 
+					style="width: 0ch;
+					background-color: #008bba00;
+				 	cursor: pointer;
+				 	font-size: 18px;
+					color: rgba(116, 111, 111, 0.345);
+					">&copy;</button>
+					<span>Copyright Intended</span>
 		      </div>
 	      </div>
 
@@ -1012,12 +1019,40 @@
     	<div id="loader"></div>
    </div>
 
-
+<div style="
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;">
+   <div class="website-counter"></div>
+</div>
    <!-- Java Script
    ================================================== -->
    <script src="js/9918-js-jquery-2.1.3.min.js"></script>
    <script src="js/3569-js-plugins.js"></script>
    <script src="js/9648-js-main.js"></script>
+   <script>
+	var counterContainer = document.querySelector(".website-counter");
+var resetButton = document.querySelector("#reset");
+var visitCount = localStorage.getItem("page_view");
+
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+
+// Adding onClick event listener
+resetButton.addEventListener("click", () => {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+  counterContainer.innerHTML = visitCount;
+});
+   </script>
 
 
    
