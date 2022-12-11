@@ -143,7 +143,7 @@
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 80%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -194,6 +194,12 @@
     opacity: 0;
     pointer-events: none;
 }
+@media only screen and (max-width: 600px) {
+	#popup {
+		width: 400px;
+		height: 250px;
+	 }
+  }
 
 </style>
 
@@ -305,11 +311,14 @@
 	
 	<div id="popup1" class="overlay">
 		<div class="popup" >
-			<h2>Before you go ahead</h2>
+			<h2 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">A little heads up before you go ahead</h2>
 			<!-- This hides it. -->
 			<a class="close" href="#popup1">×</a>
-			<div class="content">
+			<div class="content" style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
 				Thanks for Visiting. The website is going through changes everyday. So please bear with me if something looks strange.  
+			</div>
+			<div id="wrap" style=" display: flex;  justify-content: center;">
+				<button type="reset" style="height: min-content; " onclick="window.location.href = '#popup1'">Go ahead</button>
 			</div>
 		</div>
 	</div>
