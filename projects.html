@@ -1,0 +1,1294 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"/>
+    <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],"/detroitchicago/grapefruit.gif",{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"/>
+        <link rel="profile" href="https://gmpg.org/xfn/11"/>
+    
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <!-- Jetpack Site Verification Tags -->
+    <meta name="google-site-verification" content="YX6tSGKaTXvTxyTPwg0ufKpYPgmVXpGnr2hVaICII50"/>
+    <meta name="msvalidate.01" content="2633057DB01A917911F59FDC6320756B"/>
+    
+        <!-- This site is optimized with the Yoast SEO plugin v20.1 - https://yoast.com/wordpress/plugins/seo/ -->
+        <title>Projects</title>
+        <meta name="description" content="In this article, I will take you through a list of data science projects with Python that will help you learn and implement Data Science."/>
+        <link rel="canonical" href="https://thecleverprogrammer.com/2022/03/09/data-science-projects/"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Data Science Projects | Aman Kharwal"/>
+        <meta property="og:description" content="In this article, I will take you through a list of data science projects with Python that will help you learn and implement Data Science."/>
+        <meta property="og:url" content="https://thecleverprogrammer.com/2022/03/09/data-science-projects/"/>
+        <meta property="og:site_name" content="thecleverprogrammer"/>
+        <meta property="article:published_time" content="2022-03-09T07:53:07+00:00"/>
+        <meta property="article:modified_time" content="2023-02-03T08:10:47+00:00"/>
+        <meta property="og:image" content="https://thecleverprogrammer.com/wp-content/uploads/2022/03/Data-Science-Projects-for-Beginners.png"/>
+        <meta property="og:image:width" content="1920"/>
+        <meta property="og:image:height" content="1080"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta name="author" content="Aman Kharwal"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:creator" content="@amankk_9"/>
+        <meta name="twitter:site" content="@amankk_9"/>
+        <meta name="twitter:label1" content="Written by"/>
+        <meta name="twitter:data1" content="Aman Kharwal"/>
+        <meta name="twitter:label2" content="Est. reading time"/>
+        <meta name="twitter:data2" content="4 minutes"/>
+        <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#article","isPartOf":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/"},"author":{"name":"Aman Kharwal","@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"headline":"Data Science Projects","datePublished":"2022-03-09T07:53:07+00:00","dateModified":"2023-02-03T08:10:47+00:00","mainEntityOfPage":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/"},"wordCount":743,"commentCount":2,"publisher":{"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"image":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#primaryimage"},"thumbnailUrl":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Data-Science-Projects-for-Beginners.png?fit=1920%2C1080&ssl=1","keywords":["Data Analysis","data science","Machine Learning Project"],"articleSection":["Machine Learning"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://thecleverprogrammer.com/2022/03/09/data-science-projects/#respond"]}]},{"@type":"WebPage","@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/","url":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/","name":"Data Science Projects | Aman Kharwal","isPartOf":{"@id":"https://thecleverprogrammer.com/#website"},"primaryImageOfPage":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#primaryimage"},"image":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#primaryimage"},"thumbnailUrl":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Data-Science-Projects-for-Beginners.png?fit=1920%2C1080&ssl=1","datePublished":"2022-03-09T07:53:07+00:00","dateModified":"2023-02-03T08:10:47+00:00","description":"In this article, I will take you through a list of data science projects with Python that will help you learn and implement Data Science.","breadcrumb":{"@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://thecleverprogrammer.com/2022/03/09/data-science-projects/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#primaryimage","url":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Data-Science-Projects-for-Beginners.png?fit=1920%2C1080&ssl=1","contentUrl":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Data-Science-Projects-for-Beginners.png?fit=1920%2C1080&ssl=1","width":1920,"height":1080,"caption":"Data Science Projects"},{"@type":"BreadcrumbList","@id":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thecleverprogrammer.com/"},{"@type":"ListItem","position":2,"name":"All Articles","item":"https://thecleverprogrammer.com/machine-learning/"},{"@type":"ListItem","position":3,"name":"Data Science Projects"}]},{"@type":"WebSite","@id":"https://thecleverprogrammer.com/#website","url":"https://thecleverprogrammer.com/","name":"thecleverprogrammer","description":"Learn Python, C++, Coding, Machine Learning, Data Science, Artificial Intelligence and JavaScript.","publisher":{"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://thecleverprogrammer.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b","name":"Aman Kharwal","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://thecleverprogrammer.com/#/schema/person/image/","url":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/aman-removebg.png?fit=658%2C545&ssl=1","contentUrl":"https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/aman-removebg.png?fit=658%2C545&ssl=1","width":658,"height":545,"caption":"Aman Kharwal"},"logo":{"@id":"https://thecleverprogrammer.com/#/schema/person/image/"},"description":"I'm a writer and data scientist on a mission to educate others about the incredible power of data📈.","sameAs":["http://Thecleverprogrammer.com","https://www.instagram.com/amankharwal.official/","https://twitter.com/amankk_9"]}]}</script>
+        <!-- / Yoast SEO plugin. -->
+    
+    
+    <link rel="dns-prefetch" href="//secure.gravatar.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="//widgets.wp.com"/>
+    <link rel="dns-prefetch" href="//jetpack.wordpress.com"/>
+    <link rel="dns-prefetch" href="//s0.wp.com"/>
+    <link rel="dns-prefetch" href="//public-api.wordpress.com"/>
+    <link rel="dns-prefetch" href="//0.gravatar.com"/>
+    <link rel="dns-prefetch" href="//1.gravatar.com"/>
+    <link rel="dns-prefetch" href="//2.gravatar.com"/>
+    <link rel="dns-prefetch" href="//i0.wp.com"/>
+    <link rel="dns-prefetch" href="//c0.wp.com"/>
+    <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect"/>
+    <link rel="stylesheet" id="all-css-5b1ced43a2897207d8d09ccb672a6afc" href="https://thecleverprogrammer.com/_static/??-eJydkutuwyAMhV9olG3qul/TnsWAldByG5imefuZpJE69bJlUpRgzGefmDMkoWMgDCSTq50NRXaVQ4W5k6paZ6RyUR+EsypDHmWh0eFGl/I0XKMOxlhJdNmanwdt0K4aLHJfpEdjAR36Rl4GiXHMwmEHetx4G36lOXcZXzKLNF/Fom5IOvrSyyMGE7OEStEDkdWS8ERzJTFY0yGJSX2RXEyed9qZe//9eGTaQSlW34MHcxSg2tw8ntvLVJVjXVP767SY03cLti2D3uYcs5i0SFaAVGZhy2czX9Ek+dbolnp7pARcw0dT21CcPfD7phGo54tY6jezQBuvqsE4lB64x40+D6EEHQqyxL3WoopFC4r8pNVssQYV5PVcDxmFiqfVJHuzebisBtnHfbvnf/RMsVARAY6rya+q0I1/cU3z8Hndjn76j5fd++7tdfu8234D0e+3NQ==" type="text/css" media="all"/>
+    <style id="wp-block-library-inline-css">
+    .has-text-align-justify{text-align:justify;}
+    </style>
+    <style id="global-styles-inline-css">
+    body{--wp--preset--shadow--natural: 0 .2rem .3rem 0 rgba(0,0,0, 0.3), 0 .5rem .6rem 0 rgba(0,0,0, 0.4);--wp--preset--shadow--sharp: .5rem .5rem 0 0 rgba(0,0,0, 0.4);--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--paletteColor1, #2872fa);--wp--preset--color--palette-color-2: var(--paletteColor2, #1559ed);--wp--preset--color--palette-color-3: var(--paletteColor3, rgba(36,59,86,0.9));--wp--preset--color--palette-color-4: var(--paletteColor4, rgba(36,59,86,1));--wp--preset--color--palette-color-5: var(--paletteColor5, #ffffff);--wp--preset--color--palette-color-6: var(--paletteColor6, #f2f5f7);--wp--preset--color--palette-color-7: var(--paletteColor7, #FAFBFC);--wp--preset--color--palette-color-8: var(--paletteColor8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans';--wp--preset--font-family--alegreya: Alegreya;--wp--preset--font-family--arvo: Arvo;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda';--wp--preset--font-family--cabin: Cabin;--wp--preset--font-family--chivo: Chivo;--wp--preset--font-family--commissioner: Commissioner;--wp--preset--font-family--cormorant: Cormorant;--wp--preset--font-family--courier-prime: 'Courier Prime';--wp--preset--font-family--crimson-pro: 'Crimson Pro';--wp--preset--font-family--dm-mono: 'DM Mono';--wp--preset--font-family--dm-sans: 'DM Sans';--wp--preset--font-family--domine: Domine;--wp--preset--font-family--eb-garamond: 'EB Garamond';--wp--preset--font-family--epilogue: Epilogue;--wp--preset--font-family--figtree: Figtree;--wp--preset--font-family--fira-sans: 'Fira Sans';--wp--preset--font-family--fraunces: Fraunces;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono';--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans';--wp--preset--font-family--inter: Inter;--wp--preset--font-family--josefin-sans: 'Josefin Sans';--wp--preset--font-family--jost: Jost;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville';--wp--preset--font-family--libre-franklin: 'Libre Franklin';--wp--preset--font-family--literata: Literata;--wp--preset--font-family--lora: Lora;--wp--preset--font-family--merriweather: Merriweather;--wp--preset--font-family--montserrat: Montserrat;--wp--preset--font-family--newsreader: Newsreader;--wp--preset--font-family--nunito: Nunito;--wp--preset--font-family--open-sans: 'Open Sans';--wp--preset--font-family--overpass: Overpass;--wp--preset--font-family--petrona: Petrona;--wp--preset--font-family--piazzolla: Piazzolla;--wp--preset--font-family--playfair-display: 'Playfair Display';--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans';--wp--preset--font-family--poppins: Poppins;--wp--preset--font-family--raleway: Raleway;--wp--preset--font-family--roboto-slab: 'Roboto Slab';--wp--preset--font-family--roboto: Roboto;--wp--preset--font-family--rubik: Rubik;--wp--preset--font-family--sora: Sora;--wp--preset--font-family--source-sans-pro: 'Source Sans Pro';--wp--preset--font-family--source-serif-pro: 'Source Serif Pro';--wp--preset--font-family--space-mono: 'Space Mono';--wp--preset--font-family--texturina: Texturina;--wp--preset--font-family--work-sans: 'Work Sans';--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}body { margin: 0;--wp--style--global--content-size: var(--block-max-width);--wp--style--global--wide-size: var(--block-wide-max-width);}.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: var(--content-spacing); }body { --wp--style--block-gap: var(--content-spacing); }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: var(--content-spacing);margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: var(--content-spacing);margin-block-end: 0;}body .is-layout-flex{gap: var(--content-spacing);}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-color{color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-color{color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-color{color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-color{color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-color{color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-color{color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-color{color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-color{color: var(--wp--preset--color--palette-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-background-color{background-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-background-color{background-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-background-color{background-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-background-color{background-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-background-color{background-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-background-color{background-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-background-color{background-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-background-color{background-color: var(--wp--preset--color--palette-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-border-color{border-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-border-color{border-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-border-color{border-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-border-color{border-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-border-color{border-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-border-color{border-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-border-color{border-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-border-color{border-color: var(--wp--preset--color--palette-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-juicy-peach-gradient-background{background: var(--wp--preset--gradient--juicy-peach) !important;}.has-young-passion-gradient-background{background: var(--wp--preset--gradient--young-passion) !important;}.has-true-sunset-gradient-background{background: var(--wp--preset--gradient--true-sunset) !important;}.has-morpheus-den-gradient-background{background: var(--wp--preset--gradient--morpheus-den) !important;}.has-plum-plate-gradient-background{background: var(--wp--preset--gradient--plum-plate) !important;}.has-aqua-splash-gradient-background{background: var(--wp--preset--gradient--aqua-splash) !important;}.has-love-kiss-gradient-background{background: var(--wp--preset--gradient--love-kiss) !important;}.has-new-retrowave-gradient-background{background: var(--wp--preset--gradient--new-retrowave) !important;}.has-plum-bath-gradient-background{background: var(--wp--preset--gradient--plum-bath) !important;}.has-high-flight-gradient-background{background: var(--wp--preset--gradient--high-flight) !important;}.has-teen-party-gradient-background{background: var(--wp--preset--gradient--teen-party) !important;}.has-fabled-sunset-gradient-background{background: var(--wp--preset--gradient--fabled-sunset) !important;}.has-arielle-smile-gradient-background{background: var(--wp--preset--gradient--arielle-smile) !important;}.has-itmeo-branding-gradient-background{background: var(--wp--preset--gradient--itmeo-branding) !important;}.has-deep-blue-gradient-background{background: var(--wp--preset--gradient--deep-blue) !important;}.has-strong-bliss-gradient-background{background: var(--wp--preset--gradient--strong-bliss) !important;}.has-sweet-period-gradient-background{background: var(--wp--preset--gradient--sweet-period) !important;}.has-purple-division-gradient-background{background: var(--wp--preset--gradient--purple-division) !important;}.has-cold-evening-gradient-background{background: var(--wp--preset--gradient--cold-evening) !important;}.has-mountain-rock-gradient-background{background: var(--wp--preset--gradient--mountain-rock) !important;}.has-desert-hump-gradient-background{background: var(--wp--preset--gradient--desert-hump) !important;}.has-ethernal-constance-gradient-background{background: var(--wp--preset--gradient--ethernal-constance) !important;}.has-happy-memories-gradient-background{background: var(--wp--preset--gradient--happy-memories) !important;}.has-grown-early-gradient-background{background: var(--wp--preset--gradient--grown-early) !important;}.has-morning-salad-gradient-background{background: var(--wp--preset--gradient--morning-salad) !important;}.has-night-call-gradient-background{background: var(--wp--preset--gradient--night-call) !important;}.has-mind-crawl-gradient-background{background: var(--wp--preset--gradient--mind-crawl) !important;}.has-angel-care-gradient-background{background: var(--wp--preset--gradient--angel-care) !important;}.has-juicy-cake-gradient-background{background: var(--wp--preset--gradient--juicy-cake) !important;}.has-rich-metal-gradient-background{background: var(--wp--preset--gradient--rich-metal) !important;}.has-mole-hall-gradient-background{background: var(--wp--preset--gradient--mole-hall) !important;}.has-cloudy-knoxville-gradient-background{background: var(--wp--preset--gradient--cloudy-knoxville) !important;}.has-soft-grass-gradient-background{background: var(--wp--preset--gradient--soft-grass) !important;}.has-saint-petersburg-gradient-background{background: var(--wp--preset--gradient--saint-petersburg) !important;}.has-everlasting-sky-gradient-background{background: var(--wp--preset--gradient--everlasting-sky) !important;}.has-kind-steel-gradient-background{background: var(--wp--preset--gradient--kind-steel) !important;}.has-over-sun-gradient-background{background: var(--wp--preset--gradient--over-sun) !important;}.has-premium-white-gradient-background{background: var(--wp--preset--gradient--premium-white) !important;}.has-clean-mirror-gradient-background{background: var(--wp--preset--gradient--clean-mirror) !important;}.has-wild-apple-gradient-background{background: var(--wp--preset--gradient--wild-apple) !important;}.has-snow-again-gradient-background{background: var(--wp--preset--gradient--snow-again) !important;}.has-confident-cloud-gradient-background{background: var(--wp--preset--gradient--confident-cloud) !important;}.has-glass-water-gradient-background{background: var(--wp--preset--gradient--glass-water) !important;}.has-perfect-white-gradient-background{background: var(--wp--preset--gradient--perfect-white) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-pro-font-family{font-family: var(--wp--preset--font-family--source-sans-pro) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+    .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+    .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+    </style>
+    <link rel="stylesheet" id="fontawesomepublic-css" href="https://thecleverprogrammer.com/wp-content/plugins/wdv-about-me-widget/public/../includes/fonts/css/all.min.css?ver=5.9.0" media="all"/>
+    <link rel="stylesheet" id="fontawesomepublicv4-css" href="https://thecleverprogrammer.com/wp-content/plugins/wdv-about-me-widget/public/../includes/fonts/css/v4-shims.min.css?ver=5.9.0" media="all"/>
+    <style id="jetpack-global-styles-frontend-style-inline-css">
+    :root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+    </style>
+    <script id="qubely_local_script-js-extra">
+    var qubely_urls = {"plugin":"https:\/\/thecleverprogrammer.com\/wp-content\/plugins\/qubely\/","ajax":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","nonce":"cb5dfc2bc9","actual_url":"thecleverprogrammer.com"};
+    </script>
+    <script id="qubely_container_width-js-extra">
+    var qubely_container_width = {"sm":"480","md":"690","lg":"1000","xl":"1200"};
+    </script>
+    <script id="media-video-jwt-bridge-js-extra">
+    var videopressAjax = {"ajaxUrl":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","bridgeUrl":"https:\/\/thecleverprogrammer.com\/wp-content\/plugins\/jetpack\/jetpack_vendor\/automattic\/jetpack-videopress\/src\/..\/build\/lib\/token-bridge.js","post_id":"16997"};
+    </script>
+    <script src="https://thecleverprogrammer.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-videopress/src/../build/lib/token-bridge.js?ver=0.10.9" id="media-video-jwt-bridge-js"></script>
+    <script src="https://thecleverprogrammer.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://thecleverprogrammer.com/_static/??wp-includes/js/jquery/jquery-migrate.min.js,wp-content/plugins/wdv-about-me-widget/public/js/wdv-about-me-widget-public.js?m=1614814412"></script>
+    
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-161424785-3" id="google_gtagjs-js" async=""></script>
+    <script id="google_gtagjs-js-after">
+    window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+    gtag('set', 'linker', {"domains":["thecleverprogrammer.com"]} );
+    gtag("js", new Date());
+    gtag("set", "developer_id.dZTNiMT", true);
+    gtag("config", "UA-161424785-3", {"anonymize_ip":true});
+    </script>
+    
+    <!-- End Google Analytics snippet added by Site Kit -->
+    <link rel="https://api.w.org/" href="https://thecleverprogrammer.com/wp-json/"/><link rel="alternate" type="application/json" href="https://thecleverprogrammer.com/wp-json/wp/v2/posts/16997"/><link rel="alternate" type="application/json+oembed" href="https://thecleverprogrammer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F"/>
+    <link rel="alternate" type="text/xml+oembed" href="https://thecleverprogrammer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F&amp;format=xml"/>
+    <meta name="generator" content="Site Kit by Google 1.94.0"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306647371633064" crossorigin="anonymous"></script>                <!-- auto ad code generated with Simple Google Adsense plugin v1.0.10 -->
+                    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({
+                         google_ad_client: "ca-pub-6306647371633064",
+                         enable_page_level_ads: true
+                    });
+                    </script>      
+                    <!-- / Simple Google Adsense plugin -->	<style>img#wpstats{display:none}</style>
+            <noscript><link rel='stylesheet' href='https://thecleverprogrammer.com/wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css'></noscript>
+    <style id="ct-main-styles-inline-css">[data-header*="type-1"] .ct-header [data-id="logo"] .site-logo-container {--logo-max-height:50px;} [data-header*="type-1"] .ct-header [data-id="logo"] .site-title {--fontWeight:700;--fontSize:25px;--lineHeight:1.5;--linkInitialColor:var(--paletteColor4);} [data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a {--fontWeight:700;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;--linkInitialColor:var(--color);} [data-header*="type-1"] .ct-header [data-id="menu"][data-menu*="type-3"] > ul > li > a {--linkHoverColor:#ffffff;--linkActiveColor:#ffffff;} [data-header*="type-1"] .ct-header [data-id="menu"] {--menu-indicator-active-color:var(--paletteColor3);} [data-header*="type-1"] .ct-header [data-id="menu"] .sub-menu {--linkInitialColor:#ffffff;--dropdown-background-color:var(--paletteColor6);--fontWeight:500;--fontSize:12px;--dropdown-divider:1px dashed rgba(255, 255, 255, 0.1);--box-shadow:0px 10px 20px rgba(41, 51, 61, 0.1);--border-radius:0px 0px 2px 2px;} [data-header*="type-1"] .ct-header [data-row*="middle"] {--height:99px;background-color:rgba(255, 255, 255, 0);background-image:none;--borderTop:none;--borderBottom:none;--box-shadow:none;} [data-header*="type-1"] .ct-header [data-row*="middle"] > div {--borderTop:none;--borderBottom:none;} [data-header*="type-1"] [data-id="mobile-menu"] {--fontWeight:700;--fontSize:20px;--linkInitialColor:#ffffff;--mobile-menu-divider:none;} [data-header*="type-1"] #offcanvas .ct-panel-inner {background-color:rgba(18, 21, 25, 0.98);} [data-header*="type-1"] #offcanvas {--side-panel-width:500px;} [data-header*="type-1"] [data-behaviour*="side"] {--box-shadow:0px 0px 70px rgba(0, 0, 0, 0.35);} [data-header*="type-1"] #search-modal .ct-search-results a {--fontWeight:500;--fontSize:14px;--lineHeight:1.4;} [data-header*="type-1"] #search-modal {--linkInitialColor:#ffffff;--form-text-initial-color:#ffffff;--form-text-focus-color:#ffffff;background-color:rgba(18, 21, 25, 0.98);} [data-header*="type-1"] [data-id="trigger"] {--icon-size:19px;} [data-header*="type-1"] [data-id="trigger"] .ct-label {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-header*="type-1"] {--header-height:99px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--container-spacing:25px;--border:none;--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] .widget-title {--fontSize:16px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] {background-color:transparent;} [data-footer*="type-1"] [data-id="copyright"] {--fontWeight:400;--fontSize:15px;--lineHeight:1.3;} [data-footer*="type-1"] [data-id="socials"].ct-footer-socials .ct-label {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-footer*="type-1"] [data-id="socials"].ct-footer-socials [data-color="custom"] {--background-color:rgba(218, 222, 228, 0.3);--background-hover-color:var(--paletteColor1);} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--container-spacing:30px;--border:none;--grid-template-columns:repeat(2, 1fr);} [data-footer*="type-1"] .ct-footer [data-row*="top"] .widget-title {--fontSize:16px;} [data-footer*="type-1"] .ct-footer [data-row*="top"] {background-color:transparent;} [data-footer*="type-1"] footer.ct-footer {background-color:var(--paletteColor6);}:root {--fontFamily:Arial;--fontWeight:400;--textTransform:none;--textDecoration:none;--fontSize:22px;--lineHeight:1.65;--letterSpacing:0em;--buttonFontWeight:500;--buttonFontSize:15px;--has-classic-forms:var(--true);--has-modern-forms:var(--false);--form-field-border-initial-color:var(--border-color);--form-field-border-focus-color:var(--paletteColor1);--form-selection-control-initial-color:var(--border-color);--form-selection-control-accent-color:var(--paletteColor1);--paletteColor1:#2872fa;--paletteColor2:#1559ed;--paletteColor3:rgba(36,59,86,0.9);--paletteColor4:rgba(36,59,86,1);--paletteColor5:#ffffff;--paletteColor6:#f2f5f7;--paletteColor7:#FAFBFC;--paletteColor8:#ffffff;--color:var(--paletteColor3);--linkInitialColor:var(--paletteColor3);--linkHoverColor:var(--paletteColor4);--selectionTextColor:#ffffff;--selectionBackgroundColor:var(--paletteColor3);--border-color:var(--paletteColor5);--headings-color:var(--paletteColor4);--content-spacing:1.5em;--buttonMinHeight:40px;--buttonTextInitialColor:#ffffff;--buttonTextHoverColor:#ffffff;--buttonInitialColor:var(--paletteColor1);--buttonHoverColor:var(--paletteColor2);--button-border:none;--buttonBorderRadius:3px;--button-padding:5px 20px;--normal-container-max-width:1290px;--content-vertical-spacing:60px;--narrow-container-max-width:750px;--wide-offset:130px;}h1 {--fontFamily:Arial;--fontWeight:700;--fontSize:40px;--lineHeight:1.5;}h2 {--fontFamily:Arial;--fontWeight:700;--fontSize:35px;--lineHeight:1.5;}h3 {--fontFamily:Arial;--fontWeight:700;--fontSize:30px;--lineHeight:1.5;}h4 {--fontFamily:Arial;--fontWeight:700;--fontSize:25px;--lineHeight:1.5;}h5 {--fontWeight:700;--fontSize:20px;--lineHeight:1.5;}h6 {--fontWeight:700;--fontSize:16px;--lineHeight:1.5;}.wp-block-pullquote, .ct-quote-widget blockquote {--fontFamily:Arial;--fontWeight:600;--fontSize:25px;}code, kbd, samp, pre {--fontFamily:monospace;--fontWeight:400;--fontSize:16px;}.ct-sidebar .widget-title {--fontSize:18px;}.ct-breadcrumbs {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}body {background-color:var(--paletteColor7);background-image:none;} [data-prefix="single_blog_post"] .entry-header .page-title {--fontSize:30px;} [data-prefix="single_blog_post"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="single_blog_post"] .hero-section[data-type="type-2"] {--alignment:center;--vertical-alignment:center;--min-height:0px;background-color:var(--paletteColor7);background-image:none;--container-padding:50px 0;} [data-prefix="single_blog_post"] .hero-section .entry-meta {--itemSpacing:14px;} [data-prefix="blog"] .entry-header .page-title {--fontSize:30px;} [data-prefix="blog"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="categories"] .entry-header .page-title {--fontSize:30px;} [data-prefix="categories"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="search"] .entry-header .page-title {--fontSize:30px;} [data-prefix="search"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="author"] .entry-header .page-title {--fontSize:30px;} [data-prefix="author"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="author"] .hero-section[data-type="type-2"] {background-color:var(--paletteColor6);background-image:none;--container-padding:50px 0;} [data-prefix="single_page"] .entry-header .page-title {--fontSize:30px;} [data-prefix="single_page"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="jetpack-portfolio_single"] .entry-header .page-title {--fontSize:30px;} [data-prefix="jetpack-portfolio_single"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="jetpack-portfolio_archive"] .entry-header .page-title {--fontSize:30px;} [data-prefix="jetpack-portfolio_archive"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;} [data-prefix="blog"] .entries {--grid-template-columns:repeat(2, minmax(0, 1fr));--grid-columns-gap:41px;} [data-prefix="blog"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="blog"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--linkHoverColor:var(--paletteColor4);} [data-prefix="blog"] .entry-button {--buttonInitialColor:var(--paletteColor3);--buttonHoverColor:var(--paletteColor4);} [data-prefix="blog"] .entry-card {--card-inner-spacing:75px;background-color:var(--paletteColor7);--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);--text-horizontal-alignment:left;--horizontal-alignment:flex-start;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(3, minmax(0, 1fr));} [data-prefix="categories"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="categories"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="categories"] .entry-card {background-color:var(--paletteColor8);--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="author"] .entries {--grid-template-columns:repeat(3, minmax(0, 1fr));} [data-prefix="author"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="author"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="author"] .entry-card {background-color:var(--paletteColor8);--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="search"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="search"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="search"] .entry-card {background-color:var(--paletteColor8);--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(3, minmax(0, 1fr));} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="jetpack-portfolio_archive"] .entry-card {background-color:var(--paletteColor8);--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}form textarea {--form-field-height:170px;} [data-sidebar] {--sidebar-width:24%;--sidebar-width-no-unit:24;--sidebar-gap:3%;--sidebar-offset:11px;}.ct-sidebar {--linkInitialColor:var(--color);--sidebar-widgets-spacing:15px;} [data-sidebar] > aside {--sidebar-background-color:var(--paletteColor8);}.ct-back-to-top {--icon-color:#ffffff;--icon-hover-color:#ffffff;--border-radius:2px;} [data-prefix="single_blog_post"] .ct-share-box[data-location="bottom"] {--margin:47px;} [data-prefix="single_blog_post"] .ct-share-box[data-type="type-1"] {--border:1px solid var(--border-color);} [data-prefix="single_blog_post"] .author-box {--spacing:0px;} [data-prefix="single_blog_post"] .author-box[data-type="type-2"] {--border-color:var(--paletteColor4);} [data-prefix="single_blog_post"] .post-navigation {--linkInitialColor:var(--color);} [data-prefix="single_blog_post"] .ct-related-posts-container {background-color:var(--paletteColor6);} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(4, 1fr);} [data-prefix="jetpack-portfolio_single"] [class*="ct-container"] > article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);} [data-prefix="single_blog_post"] {background-color:var(--paletteColor8);} [data-prefix="single_blog_post"] [class*="ct-container"] > article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);} [data-prefix="single_page"] [class*="ct-container"] > article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);}@media (max-width: 999.98px) {[data-header*="type-1"] .ct-header [data-row*="middle"] {--height:70px;} [data-header*="type-1"] #offcanvas {--side-panel-width:65vw;} [data-header*="type-1"] {--header-height:70px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--grid-template-columns:initial;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(2, minmax(0, 1fr));} [data-prefix="author"] .entries {--grid-template-columns:repeat(2, minmax(0, 1fr));} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(2, minmax(0, 1fr));} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(2, 1fr);}}@media (max-width: 689.98px) {[data-header*="type-1"] #offcanvas {--side-panel-width:90vw;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--container-spacing:15px;--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--grid-template-columns:initial;} [data-prefix="blog"] .entries {--grid-template-columns:repeat(1, minmax(0, 1fr));} [data-prefix="blog"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(1, minmax(0, 1fr));} [data-prefix="categories"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="author"] .entries {--grid-template-columns:repeat(1, minmax(0, 1fr));} [data-prefix="author"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="search"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(1, minmax(0, 1fr));} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-title {--fontSize:18px;}:root {--content-vertical-spacing:50px;} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(1, 1fr);}}</style>
+    
+    <!-- Google AdSense snippet added by Site Kit -->
+    <meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236"/>
+    <meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com"/>
+    <!-- End Google AdSense snippet added by Site Kit -->
+                <style type="text/css">
+                    /* If html does not have either class, do not show lazy loaded images. */
+                    html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    document.documentElement.classList.add(
+                        'jetpack-lazy-images-js-enabled'
+                    );
+                </script>
+            <link rel="icon" href="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/cropped-thecleverprogrkammer.png?fit=32%2C32&amp;ssl=1" sizes="32x32"/>
+    <link rel="icon" href="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/cropped-thecleverprogrkammer.png?fit=192%2C192&amp;ssl=1" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/cropped-thecleverprogrkammer.png?fit=180%2C180&amp;ssl=1"/>
+    <meta name="msapplication-TileImage" content="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/cropped-thecleverprogrkammer.png?fit=270%2C270&amp;ssl=1"/>
+    <style type="text/css"></style>		<!-- Jetpack Google Analytics -->
+            <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-W5B0M2RLRX"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push( arguments ); }
+                gtag( 'js', new Date() );
+                gtag( 'config', "G-W5B0M2RLRX" );
+                        </script>
+            <!-- End Jetpack Google Analytics -->
+                <script type="text/javascript">var ezouid = "1";</script><base href="https://thecleverprogrammer.com/2022/03/09/data-science-projects/"><script type='text/javascript'>
+    var ezoTemplate = 'old_site_noads';
+    if(typeof ezouid == 'undefined')
+    {
+        var ezouid = 'none';
+    }
+    var ezoFormfactor = '1';
+    var ezo_elements_to_check = Array();
+    </script><!-- START EZHEAD -->
+    <script data-ezscrex="false" type='text/javascript'>
+    var soc_app_id = '0';
+    var did = 371339;
+    var ezdomain = 'thecleverprogrammer.com';
+    var ezoicSearchable = 1;
+    </script>
+    <!--{jquery}-->
+    <!-- END EZHEAD -->
+    <script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod1-c","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Ranchi","country":"IN","days_since_last_visit":0,"domain_id":371339,"engaged_time_visit":333,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":true,"is_sitespeed":0,"last_page_load":"1676547009476","last_pageview_id":"d43cfe24-7d5a-4b65-77d0-2677860911e6","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":8,"page_view_id":"4dc3e79c-0440-46ff-5ed0-cc2a0e784c85","position_selection_id":0,"postal_code":"834001","pv_event_count":0,"referring_domain":"thecleverprogrammer.com","response_size_orig":149640,"response_time_orig":0,"serverid":"54.149.113.175:25263","state":"JH","t_epoch":1676547058,"template_id":120,"time_on_site_visit":6263,"url":"https://thecleverprogrammer.com/2022/03/09/data-science-projects/","user_id":0,"visit_uuid":"03e62f99-7837-4149-7716-ae77d9561813","word_count":895,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script><script data-ezscrex='false' data-cfasync='false' type="text/javascript">var ezWp = true;</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+    function create_ezolpl(pvID, rv) {
+        var d = new Date();
+        d.setTime(d.getTime() + (365*24*60*60*1000));
+        var expires = "expires="+d.toUTCString();
+        __ez.ck.setByCat("ezux_lpl_371339=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+    }
+    function attach_ezolpl(pvID, rv) {
+        if (document.readyState === "complete") {
+            create_ezolpl(pvID, rv);
+        }
+        if(window.attachEvent) {
+            window.attachEvent("onload", create_ezolpl, pvID, rv);
+        } else {
+            if(window.onload) {
+                var curronload = window.onload;
+                var newonload = function(evt) {
+                    curronload(evt);
+                    create_ezolpl(pvID, rv);
+                };
+                window.onload = newonload;
+            } else {
+                window.onload = create_ezolpl.bind(null, pvID, rv);
+            }
+        }
+    }
+    
+    __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["4dc3e79c-0440-46ff-5ed0-cc2a0e784c85", "true"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+    <script type="text/javascript">var _audins_dom="thecleverprogrammer_com",_audins_did=371339;__ez.queue.addFile('/detroitchicago/cmbv2.js', '//g.ezoic.net/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y1d-7y0b-6y0d-23y17-4y1b-5y22-4y27-3y35-4y5e-2&cmbcb=125&sj=x04x02x06x07x1dx0bx0dx17x1bx22x27x35x5e', true, [], true, false, true, false);</script>
+    <script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '//g.ezoic.net/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y1c-5&cmbcb=125&sj=x03x0cx1c', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+    
+    
+    <body class="post-template-default single single-post postid-16997 single-format-standard wp-custom-logo wp-embed-responsive qubely qubely-frontend ct-loading" data-link="type-2" data-prefix="single_blog_post" data-header="type-1" data-footer="type-1" itemscope="itemscope" itemtype="https://schema.org/Blog">
+    
+    <a class="skip-link show-on-focus" href="#main">
+        Skip to content</a>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><div class="ct-drawer-canvas">
+            <div id="search-modal" class="ct-panel" data-behaviour="modal">
+                <div class="ct-panel-actions">
+                    <button class="ct-toggle-close" data-type="type-1" aria-label="Close search modal">
+                        <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>				</button>
+                </div>
+    
+                <div class="ct-panel-content">
+                    
+    
+    <form role="search" method="get" class="search-form" action="https://thecleverprogrammer.com/" aria-haspopup="listbox" data-live-results="thumbs">
+    
+        <input type="search" class="modal-field" placeholder="Search" value="" name="s" autocomplete="off" title="Search for..." aria-label="Search for..."/>
+    
+        <button type="submit" class="search-submit" aria-label="Search button">
+            <svg class="ct-icon" aria-hidden="true" width="15" height="15" viewBox="0 0 15 15"><path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path></svg>
+            <span data-loader="circles"><span></span><span></span><span></span></span>
+        </button>
+    
+        
+                <input type="hidden" name="ct_post_type" value="post:page:jetpack-portfolio"/>
+        
+        
+                <div class="screen-reader-text" aria-live="polite" role="status">
+                No results		</div>
+        
+    </form>
+    
+    
+                </div>
+            </div>
+    
+            <div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side"><div class="ct-panel-inner">
+            <div class="ct-panel-actions">
+                <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+                    <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>
+                </button>
+            </div>
+            <div class="ct-panel-content" data-device="desktop"></div><div class="ct-panel-content" data-device="mobile">
+    <nav class="mobile-menu" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1" aria-label="Off Canvas Menu">
+        <ul id="menu-primary-1" role="menubar"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8468" role="none"><a href="https://thecleverprogrammer.com/" class="ct-menu-link" role="menuitem">Home</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5638" role="none"><a href="https://thecleverprogrammer.com/machine-learning/" class="ct-menu-link" role="menuitem">All Articles</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19347" role="none"><a href="https://thecleverprogrammer.com/recommended-courses/" class="ct-menu-link" role="menuitem">Recommended Courses</a></li>
+    </ul></nav>
+    
+    </div></div></div>
+        <a href="#main-container" class="ct-back-to-top ct-hidden-sm" data-shape="square" data-alignment="right" title="Go to top" aria-label="Go to top">
+    
+            <svg class="ct-icon" width="15" height="15" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"></path></svg>	</a>
+    
+        </div>
+    <div id="main-container">
+        <header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+    <div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+    
+                <a href="https://thecleverprogrammer.com/" class="site-logo-container" rel="home"><img width="1080" height="1080" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1" class="default-logo jetpack-lazy-image" alt="thecleverprogrammer" data-attachment-id="19103" data-permalink="https://thecleverprogrammer.com/thecleverprogrkammer/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="thecleverprogrkammer" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1024%2C1024&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?w=1080&amp;ssl=1 1080w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=50%2C50&amp;ssl=1 50w" data-lazy-sizes="(max-width: 1080px) 100vw, 1080px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1&amp;is-pending-load=1"/></a>	
+        </div>
+    
+    </div></div><div data-column="end" data-placements="1"><div data-items="primary">
+    <nav id="header-menu-1" class="header-menu-1" data-id="menu" data-interaction="hover" data-menu="type-2:default" data-dropdown="type-1:simple" data-responsive="no" itemscope="" itemtype="https://schema.org/SiteNavigationElement" aria-label="Header Menu">
+    
+        <ul id="menu-primary" class="menu" role="menubar"><li id="menu-item-8468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8468" role="none"><a href="https://thecleverprogrammer.com/" class="ct-menu-link" role="menuitem">Home</a></li>
+    <li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5638" role="none"><a href="https://thecleverprogrammer.com/machine-learning/" class="ct-menu-link" role="menuitem">All Articles</a></li>
+    <li id="menu-item-19347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19347" role="none"><a href="https://thecleverprogrammer.com/recommended-courses/" class="ct-menu-link" role="menuitem">Recommended Courses</a></li>
+    </ul></nav>
+    
+    
+    <button data-toggle-panel="#search-modal" class="ct-header-search ct-toggle " aria-label="Open search form" data-label="left" data-id="search">
+    
+        <span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Search</span>
+    
+        <svg class="ct-icon" aria-hidden="true" width="15" height="15" viewBox="0 0 15 15"><path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path></svg></button>
+    </div></div></div></div></div><div data-device="mobile"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+    <div class="site-branding" data-id="logo">
+    
+                <a href="https://thecleverprogrammer.com/" class="site-logo-container" rel="home"><img width="1080" height="1080" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1" class="default-logo jetpack-lazy-image" alt="thecleverprogrammer" data-attachment-id="19103" data-permalink="https://thecleverprogrammer.com/thecleverprogrkammer/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="thecleverprogrkammer" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1024%2C1024&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?w=1080&amp;ssl=1 1080w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?resize=50%2C50&amp;ssl=1 50w" data-lazy-sizes="(max-width: 1080px) 100vw, 1080px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/12/thecleverprogrkammer.png?fit=1080%2C1080&amp;ssl=1&amp;is-pending-load=1"/></a>	
+        </div>
+    
+    </div></div><div data-column="end" data-placements="1"><div data-items="primary">
+    <button data-toggle-panel="#offcanvas" class="ct-header-trigger ct-toggle " data-design="simple" data-label="right" aria-label="Open off canvas" data-id="trigger">
+    
+        <span class="ct-label "></span>
+    
+        <svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14" aria-hidden="true" data-type="type-1">
+    
+            <rect y="0.00" width="18" height="1.7" rx="1"></rect>
+            <rect y="6.15" width="18" height="1.7" rx="1"></rect>
+            <rect y="12.3" width="18" height="1.7" rx="1"></rect>
+        </svg>
+    </button>
+    </div></div></div></div></div></header>
+        <main id="main" class="site-main hfeed" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+    
+            
+    <div class="hero-section" data-type="type-2">
+        
+                <header class="entry-header ct-container">
+                <h1 class="page-title" title="Data Science Projects" itemprop="headline">Data Science Projects</h1><ul class="entry-meta" data-type="icons:slash"><li class="meta-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><a href="https://thecleverprogrammer.com/author/amankharwal/" tabindex="-1" class="ct-image-container-static"><img loading="lazy" src="https://secure.gravatar.com/avatar/8be3cd61b437e9d5f7ad2e88f2af7c73?s=50&amp;d=mm&amp;r=g" width="25" height="25" style="height:25px" alt="Aman Kharwal"/></a><svg width="13" height="13" viewBox="0 0 15 15"><path d="M13.6,1.4c-1.9-1.9-4.9-1.9-6.8,0L2.2,6C2.1,6.1,2,6.3,2,6.5V12l-1.8,1.8c-0.3,0.3-0.3,0.7,0,1C0.3,14.9,0.5,15,0.7,15s0.3-0.1,0.5-0.2L3,13h5.5c0.2,0,0.4-0.1,0.5-0.2l2.7-2.7c0,0,0,0,0,0l1.9-1.9C15.5,6.3,15.5,3.3,13.6,1.4z M8.2,11.6H4.4l1.4-1.4h3.9L8.2,11.6z M12.6,7.2L11,8.9H7.1l3.6-3.6c0.3-0.3,0.3-0.7,0-1C10.4,4,10,4,9.7,4.3L5,9.1c0,0,0,0,0,0l-1.6,1.6V6.8l4.4-4.4c1.3-1.3,3.5-1.3,4.8,0C14,3.7,14,5.9,12.6,7.2C12.6,7.2,12.6,7.2,12.6,7.2z"></path></svg><a class="ct-meta-element-author" href="https://thecleverprogrammer.com/author/amankharwal/" title="Posts by Aman Kharwal" rel="author" itemprop="url"><span itemprop="name">Aman Kharwal</span></a></li><li class="meta-date" itemprop="datePublished"><svg width="13" height="13" viewBox="0 0 15 15"><path d="M7.5,0C3.4,0,0,3.4,0,7.5S3.4,15,7.5,15S15,11.6,15,7.5S11.6,0,7.5,0z M7.5,13.6c-3.4,0-6.1-2.8-6.1-6.1c0-3.4,2.8-6.1,6.1-6.1c3.4,0,6.1,2.8,6.1,6.1C13.6,10.9,10.9,13.6,7.5,13.6z M10.8,9.2c-0.1,0.2-0.4,0.4-0.6,0.4c-0.1,0-0.2,0-0.3-0.1L7.2,8.1C7,8,6.8,7.8,6.8,7.5V4c0-0.4,0.3-0.7,0.7-0.7S8.2,3.6,8.2,4v3.1l2.4,1.2C10.9,8.4,11,8.8,10.8,9.2z"></path></svg><time class="ct-meta-element-date" datetime="2022-03-09T13:23:07+05:30">March 9, 2022</time></li><li class="meta-categories" data-type="simple"><svg width="13" height="13" viewBox="0 0 15 15"><path d="M14.4,1.2H0.6C0.3,1.2,0,1.5,0,1.9V5c0,0.3,0.3,0.6,0.6,0.6h0.6v7.5c0,0.3,0.3,0.6,0.6,0.6h11.2c0.3,0,0.6-0.3,0.6-0.6V5.6h0.6C14.7,5.6,15,5.3,15,5V1.9C15,1.5,14.7,1.2,14.4,1.2z M12.5,12.5h-10V5.6h10V12.5z M13.8,4.4H1.2V2.5h12.5V4.4z M5.6,7.5c0-0.3,0.3-0.6,0.6-0.6h2.5c0.3,0,0.6,0.3,0.6,0.6S9.1,8.1,8.8,8.1H6.2C5.9,8.1,5.6,7.8,5.6,7.5z"></path></svg><a href="https://thecleverprogrammer.com/category/by-aman-kharwal/" rel="tag" class="ct-term-698378106">Machine Learning</a></li><li class="meta-comments"><svg width="13" height="13" viewBox="0 0 15 15"><path d="M13.7,14.8L10.9,12H2.2C1,12,0,11,0,9.8l0-7.5C0,1,1,0,2.2,0l10.5,0C14,0,15,1,15,2.2v12c0,0.3-0.2,0.6-0.5,0.7c-0.1,0-0.2,0.1-0.3,0.1C14.1,15,13.9,14.9,13.7,14.8zM2.2,1.5c-0.4,0-0.8,0.3-0.8,0.8v7.5c0,0.4,0.3,0.8,0.8,0.8h9c0.2,0,0.4,0.1,0.5,0.2l1.7,1.7V2.2c0-0.4-0.3-0.8-0.8-0.8H2.2z"></path></svg><a href="https://thecleverprogrammer.com/2022/03/09/data-science-projects/#comments">2</a></li></ul>		</header>
+        </div>
+    
+    
+    
+        <div class="ct-container" data-sidebar="right" data-vertical-spacing="top:bottom">
+    
+            
+            
+        <article id="post-16997" class="post-16997 post type-post status-publish format-standard has-post-thumbnail hentry category-by-aman-kharwal tag-data-analysis tag-data-science tag-machine-learning-project">
+    
+            
+            
+            
+            <div class="entry-content">
+                
+    <p>As a beginner in data science, it’s hard to understand all the concepts you learn without implementing them on a dataset. Working on data science projects and <strong><a href="https://statso.io/case-studies/">case studies</a></strong> will help you improve your data science skills. If you’re struggling to come up with data science project ideas and how to start and end a data science project, this article is for you. In this article, I will take you through a list of data science projects with Python that will help you learn and implement all the concepts of Data Science by using the Python programming language.</p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306647371633064" crossorigin="anonymous"></script>
+    <!-- Aman -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6306647371633064" data-ad-slot="6671908539" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+    
+    
+    
+    
+    <h2 class="wp-block-heading">Data Science Projects</h2>
+    
+    
+    
+    <p>Below is a list of Data Science projects with Python that you can try as a beginner. Each of the projects below is solved and explained using Python:</p>
+    
+    
+    
+    <ol>
+    <li><strong><a href="https://thecleverprogrammer.com/2023/01/23/algorithmic-trading-using-python/">Algorithmic Trading</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2023/01/02/food-delivery-time-prediction-using-python/">Food Delivery Time Prediction</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/11/14/a-b-testing-using-python/">A/B Testing</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/12/05/credit-score-classification-with-machine-learning/">Credit Score Classification</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2023/01/30/app-user-segmentation-using-python/">App User Segmentation</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/11/21/t20-world-cup-2022-analysis-using-python/">T20 World Cup 2022 Analysis</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/10/17/weather-forecasting-using-python/" target="_blank" rel="noreferrer noopener"><strong>Weather Forecasting</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2023/01/16/ads-click-through-rate-prediction-using-python/">Ads Click Through Rate Prediction</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2023/01/09/career-aspirations-survey-analysis-using-python/">Survey Analysis</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/12/19/fashion-recommendation-system-using-python/">Fashion Recommendation System</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/11/07/twitter-stock-market-analysis-using-python/">Twitter Timeline in the Stock Market Analysis</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/10/24/screen-time-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Screen Time Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/07/12/stock-market-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Stock Market Analysis</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/12/26/social-progress-index-analysis-using-python/">Social Progress Index Analysis</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/12/12/job-recommendation-system-using-python/">Job Recommendation System</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/11/28/consumer-complaint-classification-with-machine-learning/">Consumer Complaint Classification</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/09/05/business-forecasting-using-python/">Business Forecasting</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/09/12/news-recommendation-system-using-python/">News Recommendation System</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/09/19/iphone-sales-analysis-using-python/">iPhone Sales Analysis</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/10/31/salary-prediction-with-machine-learning/" rel="noreferrer noopener" target="_blank"><strong>Salary Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/10/10/flipkart-sale-analysis-using-python/" rel="noreferrer noopener" target="_blank"><strong>Flipkart Sale Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/10/03/credit-card-clustering-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Credit Card Clustering</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/09/26/diamond-price-analysis-using-python/">Diamond Price Analysis and prediction</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/08/29/process-of-nlp-using-python/">Step by Step NLP with Python</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/07/05/netflix-recommendation-system-using-python/" target="_blank" rel="noreferrer noopener"><strong>Netflix Recommendation System</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/08/15/house-rent-prediction-with-machine-learning/">House Rent Prediction</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/08/22/password-strength-checker-with-machine-learning/">Password Strength Checker with Machine Learning</a></strong></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/08/09/classification-model-evaluation-in-machine-learning/">Classification Model Evaluation</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/08/02/spam-comments-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Spam Comments Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/06/28/website-traffic-forecasting-using-python/" target="_blank" rel="noreferrer noopener"><strong>Website Traffic Forecasting</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/08/29/process-of-nlp-using-python/">Complete Process of NLP with Python</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/07/26/restaurant-recommendation-system-using-python/" target="_blank" rel="noreferrer noopener"><strong>Restaurant Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/06/07/online-food-order-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Online Food Order Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/05/10/virat-kohli-performance-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Virat Kohli Performance Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/07/19/book-recommendation-system-using-python/" target="_blank" rel="noreferrer noopener"><strong>Book Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/06/21/time-series-forecasting-with-arima/" target="_blank" rel="noreferrer noopener"><strong>Time Series Forecasting with ARIMA</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/05/31/smartwatch-data-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Smartwatch Data Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/05/03/ipl-2022-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>IPL 2022 Analysis using Python</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/06/14/instagram-recommendation-system-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Instagram Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/05/17/mnist-digits-classification-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>MNIST Digits Classification</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/04/19/covid-19-impacts-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Covid-19 Spread and Impacts Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/22/instagram-reach-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Instagram Reach Analysis and Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/05/24/tinder-reviews-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Tinder Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/04/26/student-marks-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Student Marks Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/02/22/online-payments-fraud-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Online Payments Fraud Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/02/01/waiter-tips-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Waiter Tips Analysis &amp; Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/04/12/tiktok-reviews-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Tiktok Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><strong><a href="https://thecleverprogrammer.com/2022/04/05/clustering-music-genres-with-machine-learning/">Clustering Music Genres with Machine Learning</a></strong></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/15/ukraine-russia-war-twitter-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Ukraine vs Russia Twitter Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/11/14/stock-price-prediction-using-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Stock Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/12/27/cryptocurrency-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Cryptocurrency Price Prediction for the next 30 days</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/08/breast-cancer-survival-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Breast Cancer Survival Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/29/covid-19-deaths-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Covid-19 Deaths Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/02/15/flipkart-reviews-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Flipkart Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/01/03/stock-price-prediction-with-lstm/" target="_blank" rel="noreferrer noopener"><strong>Stock Price Prediction with LSTM Neural Network</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/01/future-sales-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Future Sales Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/10/article-recommendation-system-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Article Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/02/08/netflix-stock-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Netflix Stock Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/01/17/time-series-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Time Series Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/01/10/classification-with-neural-networks-using-python/" target="_blank" rel="noreferrer noopener"><strong>Classification with Neural Networks</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/12/20/stress-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Stress Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/12/13/alexnet-architecture-using-python/" target="_blank" rel="noreferrer noopener"><strong>AlexNet Neural Network Architecture</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/12/29/visualize-a-machine-learning-algorithm-using-python/" target="_blank" rel="noreferrer noopener"><strong>Visualizing a Machine Learning Algorithm</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/29/how-to-give-inputs-to-a-machine-learning-model/" target="_blank" rel="noreferrer noopener"><strong>Training and Giving Inputs to a Machine Learning Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/22/product-demand-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Product Demand Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/15/electricity-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Electricity Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/30/language-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Language Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/24/add-labels-to-a-dataset-for-sentiment-analysis/" target="_blank" rel="noreferrer noopener"><strong>Adding Labels to a Dataset for Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/12/pfizer-vaccine-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Pfizer Vaccine Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/07/news-classification-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>News Classification</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/12/06/omicron-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Omicron Variant Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/17/iris-flower-classification-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Iris Flower Classification</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/08/19/water-quality-analysis/" target="_blank" rel="noreferrer noopener"><strong>Water Quality Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/09/13/twitter-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Twitter Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/11/03/squid-game-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Squid Game Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/02/comparison-of-classification-algorithms-in-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Comparison of Classification Algorithms</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/22/tata-motors-stock-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Tata Motors Stock Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/10/26/health-insurance-premium-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Health Insurance Premium Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/09/22/movie-rating-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Movie Rating Analysis for Beginners</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/09/27/number-of-orders-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Number of Orders Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/09/08/apple-stock-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Apple Stock Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/09/03/insurance-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Insurance Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/24/billionaires-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Worldwide Billionaires Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/12/unemployment-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Unemployment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/08/04/car-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Car Price Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/27/spam-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Spam Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/11/count-objects-in-image-using-python/" target="_blank" rel="noreferrer noopener"><strong>Count Objects in Image</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/06/whatsapp-chat-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>WhatsApp Chats Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/09/whatsapp-chat-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>WhatsApp Chats Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/21/microsoft-stock-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Microsoft Stock Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/13/covid-19-vaccines-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Covid-19 Vaccine Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/28/video-game-sales-prediction-model-with-python/" target="_blank" rel="noreferrer noopener"><strong>Video Game Sales Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/16/student-grades-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Student Grades Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/13/how-to-save-a-machine-learning-model/" target="_blank" rel="noreferrer noopener"><strong>Saving a Machine Learning Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/21/uber-trips-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Uber Trips Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/27/google-search-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Google Search Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/27/tesla-stock-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Tesla Stock Price Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/05/financial-budget-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Financial Budget Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/01/24/click-through-rate-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Click-Through Rate Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/02/language-translator-using-python/" target="_blank" rel="noreferrer noopener"><strong>Interactive Language Translator</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/04/language-detection-with-python/" target="_blank" rel="noreferrer noopener"><strong>Language Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/25/chatbot-using-python/" target="_blank" rel="noreferrer noopener"><strong>Create a Chatbot with Python</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/01/21/best-streaming-service-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Best Streaming Service Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/05/08/data-science-project-on-president-heights/" target="_blank" rel="noreferrer noopener"><strong>Data Science Project on President Heights</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/05/08/data-science-project-on-birth-rate-analysis/" target="_blank" rel="noreferrer noopener"><strong>Data Science Project on Birth Rate Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/05/08/data-science-project-on-time-series/" target="_blank" rel="noreferrer noopener"><strong>Data Science Project on Time Series</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/05/09/data-science-project-on-area-and-population/" target="_blank" rel="noreferrer noopener"><strong>Data Science Project on Area and Population</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/12/18/machine-learning-project-walkthrough-with-python/" target="_blank" rel="noreferrer noopener"><strong>A Complete Machine Learning Project Walkthrough</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2020/12/31/text-summarization-with-python/" target="_blank" rel="noreferrer noopener"><strong>Text Summarization</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/02/07/extract-keywords-using-python/" target="_blank" rel="noreferrer noopener"><strong>Keyword Extraction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/08/24/sarcasm-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Sarcasm Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/08/09/social-media-followers-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Social Media Followers Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/20/amazon-product-reviews-sentiment-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Amazon Product Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/25/hate-speech-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Hate Speech Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/30/end-to-end-hate-speech-detection-with-python/" target="_blank" rel="noreferrer noopener"><strong>End-to-end Hate Speech Detection System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/09/end-to-end-fake-news-detection-with-python/" target="_blank" rel="noreferrer noopener"><strong>End-to-end Fake News Detection System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/06/end-to-end-spam-detection-with-python/" target="_blank" rel="noreferrer noopener"><strong>End-to-end Spam Detection System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/07/03/hotel-reviews-sentiment-analysis-with-python/" target="_blank" rel="noreferrer noopener"><strong>Hotel Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/18/real-time-gender-detection-using-python/" target="_blank" rel="noreferrer noopener"><strong>Real-time Gender Detection System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/25/dogecoin-price-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Dogecoin Price Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/31/google-play-store-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Google Play Store Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/12/amazon-alexa-reviews-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Amazon Alexa Reviews Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/15/social-media-ads-classification-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Social Media Ads Classification</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/30/fake-news-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Fake News Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/06/03/end-to-end-machine-learning-model/" target="_blank" rel="noreferrer noopener"><strong>End-to-End Machine Learning Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/15/gender-detection-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Gender Detection</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/19/sales-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Sales Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/05/22/currency-exchange-rate-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Currency Exchange Rate Prediction</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/21/end-to-end-machine-learning-project/" target="_blank" rel="noreferrer noopener"><strong>End-to-end Machine Learning Project</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/29/profit-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Profit Prediction Model</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/19/autots-in-python-tutorial/" target="_blank" rel="noreferrer noopener"><strong>Automatic Time Series Forecasting</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/04/01/ted-talks-recommendation-system-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Ted-Talks Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/09/real-time-sentiment-analysis-using-python/" target="_blank" rel="noreferrer noopener"><strong>Real-time Sentiment Analysis</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/23/amazon-recommendation-system-using-python/" target="_blank" rel="noreferrer noopener"><strong>Amazon Recommendation System</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2021/03/05/mobile-price-classification-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Mobile Price Classification</strong></a></li>
+    
+    
+    
+    <li><a href="https://thecleverprogrammer.com/2022/03/01/future-sales-prediction-with-machine-learning/" target="_blank" rel="noreferrer noopener"><strong>Future Sales Prediction</strong></a></li>
+    </ol>
+    
+    
+    
+    <p>The above list of data science projects contains projects based on classification (Binary and Multiclass), regression, sentiment analysis, text analysis, recommendation systems, and many more. I will update this list of data science projects with more projects regularly.</p>
+    
+    
+    
+    <h3 class="wp-block-heading">Summary</h3>
+    
+    
+    
+    <p>Working on data science projects and case studies will help you improve your data science skills. The above list of Data Science projects will be updated daily with more projects. I hope you liked this article on data science projects with Python. Feel free to ask valuable questions in the comments section below.</p>
+    <!-- AI CONTENT END 1 -->
+            </div>
+    
+            
+            
+                        
+            <div class="ct-share-box" data-location="bottom" data-type="type-1">
+                
+                <div data-icons-type="simple">
+                                
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F" data-network="facebook" aria-label="Facebook" rel="noopener noreferrer nofollow">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+                    </svg>
+                </span>				</a>
+                                
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F&amp;text=Data%20Science%20Projects" data-network="twitter" aria-label="Twitter" rel="noopener noreferrer nofollow">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+                    </svg>
+                </span>				</a>
+                                                
+                    <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F&amp;title=Data%20Science%20Projects" data-network="linkedin" aria-label="LinkedIn" rel="noopener noreferrer nofollow">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+                    </svg>
+                </span>				</a>
+                                                                                                                                
+                    <a href="whatsapp://send?text=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F" data-network="whatsapp" aria-label="WhatsApp" rel="noopener noreferrer nofollow">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M10,0C4.5,0,0,4.5,0,10c0,1.9,0.5,3.6,1.4,5.1L0.1,20l5-1.3C6.5,19.5,8.2,20,10,20c5.5,0,10-4.5,10-10S15.5,0,10,0zM6.6,5.3c0.2,0,0.3,0,0.5,0c0.2,0,0.4,0,0.6,0.4c0.2,0.5,0.7,1.7,0.8,1.8c0.1,0.1,0.1,0.3,0,0.4C8.3,8.2,8.3,8.3,8.1,8.5C8,8.6,7.9,8.8,7.8,8.9C7.7,9,7.5,9.1,7.7,9.4c0.1,0.2,0.6,1.1,1.4,1.7c0.9,0.8,1.7,1.1,2,1.2c0.2,0.1,0.4,0.1,0.5-0.1c0.1-0.2,0.6-0.7,0.8-1c0.2-0.2,0.3-0.2,0.6-0.1c0.2,0.1,1.4,0.7,1.7,0.8s0.4,0.2,0.5,0.3c0.1,0.1,0.1,0.6-0.1,1.2c-0.2,0.6-1.2,1.1-1.7,1.2c-0.5,0-0.9,0.2-3-0.6c-2.5-1-4.1-3.6-4.2-3.7c-0.1-0.2-1-1.3-1-2.6c0-1.2,0.6-1.8,0.9-2.1C6.1,5.4,6.4,5.3,6.6,5.3z"></path>
+                    </svg>
+                </span>				</a>
+                                                
+                </div>
+                        </div>
+    
+                
+            
+        <div class="author-box " data-type="type-2">
+            <a href="https://thecleverprogrammer.com/author/amankharwal/" class="ct-image-container"><img loading="lazy" src="https://secure.gravatar.com/avatar/8be3cd61b437e9d5f7ad2e88f2af7c73?s=120&amp;d=mm&amp;r=g" width="60" height="60" alt="Aman Kharwal" style="aspect-ratio: 1/1;"/>
+                            <svg width="18px" height="13px" viewBox="0 0 20 15">
+                                <polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "></polygon>
+                            </svg>
+                        </a>
+            <section>
+                <h5 class="author-box-name">
+                    Aman Kharwal			</h5>
+    
+                <div class="author-box-bio">
+                    
+                    <p>I&#39;m a writer and data scientist on a mission to educate others about the incredible power of data📈.</p>
+                </div>
+    
+                <div class="author-box-social"><a href="http://Thecleverprogrammer.com" aria-label="Website icon" rel="noopener"><svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm6.9 6H14c-.4-1.8-1.4-3.6-1.4-3.6s2.8.8 4.3 3.6zM10 2s1.2 1.7 1.9 4H8.1C8.8 3.6 10 2 10 2zM2.2 12s-.6-1.8 0-4h3.4c-.3 1.8 0 4 0 4H2.2zm.9 2H6c.6 2.3 1.4 3.6 1.4 3.6C4.3 16.5 3.1 14 3.1 14zM6 6H3.1c1.6-2.8 4.3-3.6 4.3-3.6S6.4 4.2 6 6zm4 12s-1.3-1.9-1.9-4h3.8c-.6 2.1-1.9 4-1.9 4zm2.3-6H7.7s-.3-2 0-4h4.7c.3 1.8-.1 4-.1 4zm.3 5.6s1-1.8 1.4-3.6h2.9c-1.6 2.7-4.3 3.6-4.3 3.6zm1.7-5.6s.3-2.1 0-4h3.4c.6 2.2 0 4 0 4h-3.4z"></path></svg></a> <a href="http://amankk_9" aria-label="Twitter icon" rel="noopener"><svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M20 3.8c-.7.3-1.5.5-2.4.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1-.7-.8-1.8-1.3-3-1.3-2.3 0-4.1 1.8-4.1 4.1 0 .3 0 .6.1.9-3.4-.1-6.4-1.7-8.4-4.2C1 3.2.8 3.9.8 4.7c0 1.4.7 2.7 1.8 3.4-.6 0-1.2-.2-1.8-.5v.1c0 2 1.4 3.6 3.3 4-.3.1-.7.1-1.1.1-.3 0-.5 0-.8-.1.5 1.6 2 2.8 3.8 2.8-1.4 1.1-3.2 1.8-5.1 1.8-.3 0-.7 0-1-.1 1.8 1.2 4 1.8 6.3 1.8 7.5 0 11.6-6.3 11.6-11.6v-.5c1-.6 1.6-1.3 2.2-2.1z"></path></svg></a> <a href="https://www.instagram.com/amankharwal.official/" aria-label="Instagram icon" rel="noopener"><svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M13.3 10c0 1.8-1.5 3.3-3.3 3.3S6.7 11.8 6.7 10 8.2 6.7 10 6.7s3.3 1.5 3.3 3.3zm6.6-4.2v8.4c0 3.2-2.6 5.8-5.8 5.8H5.8C2.6 20 0 17.4 0 14.1V5.8C0 2.6 2.6 0 5.8 0h8.4c3.2 0 5.8 2.6 5.7 5.8zM15 10c0-2.8-2.2-5-5-5s-5 2.2-5 5 2.2 5 5 5 5-2.2 5-5zm1.6-5.8c0-.4-.4-.8-.8-.8s-.8.4-.8.8.4.8.8.8c.5 0 .8-.4.8-.8z"></path></svg></a> <a href="https://amankharwal.medium.com/" aria-label="Medium icon" rel="noopener"><svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M2.4 5.3c0-.2-.1-.5-.3-.7L.3 2.4v-.3H6l4.5 9.8 3.9-9.8H20v.3l-1.6 1.5c-.1.1-.2.3-.2.4v11.2c0 .2 0 .3.2.4l1.6 1.5v.3h-7.8v-.3l1.6-1.6c.2-.2.2-.2.2-.4V6.5L9.4 17.9h-.6L3.6 6.5v7.6c0 .3.1.6.3.9L6 17.6v.3H0v-.3L2.1 15c.2-.2.3-.6.3-.9V5.3z"></path></svg></a></div>
+                <a href="https://thecleverprogrammer.com/author/amankharwal/" class="ct-author-box-more">Articles: 1376</a>		</section>
+        </div>
+    
+        
+            <nav class="post-navigation ">
+                                <a href="https://thecleverprogrammer.com/2022/03/08/breast-cancer-survival-prediction-with-machine-learning/" class="nav-item-prev">
+                        <figure class="ct-image-container  "><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="Breast Cancer Survival Prediction with Machine Learning" decoding="async" loading="lazy" data-attachment-id="16982" data-permalink="https://thecleverprogrammer.com/2022/03/08/breast-cancer-survival-prediction-with-machine-learning/breast-cancer-survival-prediction-with-machine-learning/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Breast Cancer Survival Prediction with Machine Learning" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Breast-Cancer-Survival-Prediction-with-Machine-Learning.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 1/1;"/><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="0,7.5 5.5,13 6.4,12.1 2.4,8.1 20,8.1 20,6.9 2.4,6.9 6.4,2.9 5.5,2 "></polygon></svg></figure>
+                        <div class="item-content">
+                            <span class="item-label">
+                                Previous <span>Post</span>						</span>
+    
+                                                        <span class="item-title ct-hidden-sm">
+                                    Breast Cancer Survival Prediction with Machine Learning							</span>
+                                                </div>
+    
+                    </a>
+                
+                                <a href="https://thecleverprogrammer.com/2022/03/10/scrape-table-from-a-website-using-python/" class="nav-item-next">
+                        <div class="item-content">
+                            <span class="item-label">
+                                Next <span>Post</span>						</span>
+    
+                                                        <span class="item-title ct-hidden-sm">
+                                    Scrape Table from a Website using Python							</span>
+                                                </div>
+    
+                        <figure class="ct-image-container  "><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="Scrape Table from a Website using Python" decoding="async" loading="lazy" data-attachment-id="17009" data-permalink="https://thecleverprogrammer.com/2022/03/10/scrape-table-from-a-website-using-python/learn-how-to-scrape-tables-from-websites-using-python/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Learn How to Scrape Tables from Websites using Python" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2022/03/Learn-How-to-Scrape-Tables-from-Websites-using-Python.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 1/1;"/><svg width="20px" height="15px" viewBox="0 0 20 15"><polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "></polygon></svg></figure>				</a>
+                
+            </nav>
+    
+        
+        </article>
+    
+        
+            
+        <aside class="ct-hidden-sm ct-hidden-md" data-type="type-4" id="sidebar" itemtype="https://schema.org/WPSideBar" itemscope="itemscope">
+    
+            
+            <div class="ct-sidebar" data-sticky="sidebar">
+                
+                <div class="ct-widget ai_widget" id="ai_widget-7"><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306647371633064" crossorigin="anonymous"></script>
+    <!-- Aman -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6306647371633064" data-ad-slot="6671908539" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+    </div>
+                        </div>
+    
+                </aside>
+    
+        
+                </div>
+    
+    
+            <div class="ct-related-posts-container">
+            <div class="ct-container">
+        
+            <div class="ct-related-posts">
+                
+                                                <h3 class="ct-block-title">
+                        Recommended For You				</h3>
+                                
+                <div class="ct-related-posts-items" data-layout="grid">
+                                
+                    <article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                        <a class="ct-image-container" href="https://thecleverprogrammer.com/2023/02/16/heres-how-mastercard-uses-data-science/" aria-label="Here’s How Mastercard Uses Data Science" tabindex="-1"><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="How Mastercard Uses Data Science" decoding="async" loading="lazy" data-attachment-id="19651" data-permalink="https://thecleverprogrammer.com/2023/02/16/heres-how-mastercard-uses-data-science/heres-how-mastercard-uses-data-science/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Here’s How Mastercard Uses Data Science" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Mastercard-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 16/9;"/></a>
+                                                <h4 class="related-entry-title" itemprop="name">
+                                <a href="https://thecleverprogrammer.com/2023/02/16/heres-how-mastercard-uses-data-science/" itemprop="url" rel="bookmark">Here’s How Mastercard Uses Data Science</a>
+                            </h4>
+                        
+                        <ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2023-02-16T14:09:02+05:30">February 16, 2023</time></li></ul>				</article>
+                                
+                    <article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                        <a class="ct-image-container" href="https://thecleverprogrammer.com/2023/02/14/data-science-project-ideas-for-2023/" aria-label="Data Science Project Ideas for 2023" tabindex="-1"><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="Data Science Project Ideas for 2023" decoding="async" loading="lazy" data-attachment-id="19641" data-permalink="https://thecleverprogrammer.com/2023/02/14/data-science-project-ideas-for-2023/data-science-project-ideas-for-2023/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Data Science Project Ideas for 2023" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Data-Science-Project-Ideas-for-2023.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 16/9;"/></a>
+                                                <h4 class="related-entry-title" itemprop="name">
+                                <a href="https://thecleverprogrammer.com/2023/02/14/data-science-project-ideas-for-2023/" itemprop="url" rel="bookmark">Data Science Project Ideas for 2023</a>
+                            </h4>
+                        
+                        <ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2023-02-14T12:46:54+05:30">February 14, 2023</time></li><li class="meta-comments"><a href="https://thecleverprogrammer.com/2023/02/14/data-science-project-ideas-for-2023/#comments">2 Comments</a></li></ul>				</article>
+                                
+                    <article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                        <a class="ct-image-container" href="https://thecleverprogrammer.com/2023/02/13/topic-modelling-using-python/" aria-label="Topic Modelling using Python" tabindex="-1"><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="Topic Modelling using Python" decoding="async" loading="lazy" data-attachment-id="19636" data-permalink="https://thecleverprogrammer.com/2023/02/13/topic-modelling-using-python/topic-modelling-using-python/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Topic Modelling using Python" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Topic-Modelling-using-Python.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 16/9;"/></a>
+                                                <h4 class="related-entry-title" itemprop="name">
+                                <a href="https://thecleverprogrammer.com/2023/02/13/topic-modelling-using-python/" itemprop="url" rel="bookmark">Topic Modelling using Python</a>
+                            </h4>
+                        
+                        <ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2023-02-13T12:26:39+05:30">February 13, 2023</time></li></ul>				</article>
+                                
+                    <article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                        <a class="ct-image-container" href="https://thecleverprogrammer.com/2023/02/09/heres-how-samsung-uses-data-science/" aria-label="Here’s How Samsung Uses Data Science" tabindex="-1"><img width="300" height="169" src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1" class="attachment-medium size-medium wp-post-image jetpack-lazy-image" alt="How Samsung Uses Data Science" decoding="async" loading="lazy" data-attachment-id="19620" data-permalink="https://thecleverprogrammer.com/2023/02/09/heres-how-samsung-uses-data-science/heres-how-samsung-uses-data-science/" data-orig-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&#34;aperture&#34;:&#34;0&#34;,&#34;credit&#34;:&#34;&#34;,&#34;camera&#34;:&#34;&#34;,&#34;caption&#34;:&#34;&#34;,&#34;created_timestamp&#34;:&#34;0&#34;,&#34;copyright&#34;:&#34;&#34;,&#34;focal_length&#34;:&#34;0&#34;,&#34;iso&#34;:&#34;0&#34;,&#34;shutter_speed&#34;:&#34;0&#34;,&#34;title&#34;:&#34;&#34;,&#34;orientation&#34;:&#34;0&#34;}" data-image-title="Here’s How Samsung Uses Data Science" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?fit=1024%2C576&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?resize=1200%2C675&amp;ssl=1 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2023/02/Heres-How-Samsung-Uses-Data-Science.png?fit=300%2C169&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" itemprop="image" style="aspect-ratio: 16/9;"/></a>
+                                                <h4 class="related-entry-title" itemprop="name">
+                                <a href="https://thecleverprogrammer.com/2023/02/09/heres-how-samsung-uses-data-science/" itemprop="url" rel="bookmark">Here’s How Samsung Uses Data Science</a>
+                            </h4>
+                        
+                        <ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2023-02-09T12:28:10+05:30">February 9, 2023</time></li></ul>				</article>
+                            </div>
+    
+                        </div>
+    
+                </div>
+        </div>
+        
+        <div class="ct-comments-container"><div class="ct-container-narrow">
+    
+    <div class="ct-comments" id="comments">
+        
+                <h3 class="ct-comments-title">
+                2 Comments		</h3>
+        
+        
+                <ol class="ct-comment-list">
+                
+        <li id="comment-6376" class="comment even thread-even depth-1 ct-has-avatar">
+            <article class="ct-comment-inner" id="ct-comment-inner-6376">
+    
+                <footer class="ct-comment-meta">
+                    <figure class="ct-image-container"><img loading="lazy" src="https://secure.gravatar.com/avatar/015099ddccc2aa8bbd44af430771e3e8?s=100&amp;d=mm&amp;r=g" width="100" height="100" alt="Aman Kharwal" style="aspect-ratio: 1/1;"/></figure>
+                    <h4 class="ct-comment-author">
+                        Animesh Deval				</h4>
+    
+                    <div class="ct-comment-meta-data">
+                        <a href="https://thecleverprogrammer.com/2022/03/09/data-science-projects/#comment-6376">
+                            October 31, 2022 / 3:53 am					</a>
+    
+                        
+                        <a rel="nofollow" class="comment-reply-link" href="#comment-6376" data-commentid="6376" data-postid="16997" data-belowelement="ct-comment-inner-6376" data-respondelement="respond" data-replyto="Reply to Animesh Deval" aria-label="Reply to Animesh Deval">Reply</a>				</div>
+                </footer>
+    
+    
+                <div class="ct-comment-content entry-content">
+                    <p>Great work! Thanks for sharing!</p>
+    
+                                </div>
+    
+            </article>
+        <ul class="children">
+    
+        <li id="comment-6377" class="comment byuser comment-author-amankharwal bypostauthor odd alt depth-2 ct-has-avatar ct-author-comment">
+            <article class="ct-comment-inner" id="ct-comment-inner-6377">
+    
+                <footer class="ct-comment-meta">
+                    <figure class="ct-image-container"><img loading="lazy" src="https://secure.gravatar.com/avatar/8be3cd61b437e9d5f7ad2e88f2af7c73?s=100&amp;d=mm&amp;r=g" width="100" height="100" alt="Aman Kharwal" style="aspect-ratio: 1/1;"/></figure>
+                    <h4 class="ct-comment-author">
+                        <a href="http://Thecleverprogrammer.com" rel="external nofollow ugc" class="url">Aman Kharwal</a>				</h4>
+    
+                    <div class="ct-comment-meta-data">
+                        <a href="https://thecleverprogrammer.com/2022/03/09/data-science-projects/#comment-6377">
+                            October 31, 2022 / 8:11 am					</a>
+    
+                        
+                        <a rel="nofollow" class="comment-reply-link" href="#comment-6377" data-commentid="6377" data-postid="16997" data-belowelement="ct-comment-inner-6377" data-respondelement="respond" data-replyto="Reply to Aman Kharwal" aria-label="Reply to Aman Kharwal">Reply</a>				</div>
+                </footer>
+    
+    
+                <div class="ct-comment-content entry-content">
+                    <p>keep visiting 😇</p>
+    
+                                </div>
+    
+            </article>
+        </li></ul><!-- .children -->
+    </li>		</ol>
+    
+            
+            
+        
+        
+            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title">Leave a Reply					<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2022/03/09/data-science-projects/#respond" style="display:none;">Cancel reply</a></small>
+                    </h3>
+                            <form id="commentform" class="comment-form">
+                    <iframe title="Comment Form" src="https://jetpack.wordpress.com/jetpack-comment/?blogid=175928511&amp;postid=16997&amp;comment_registration=0&amp;require_name_email=1&amp;stc_enabled=1&amp;stb_enabled=1&amp;show_avatars=1&amp;avatar_default=mystery&amp;greeting=Leave+a+Reply&amp;jetpack_comments_nonce=63114ab3cd&amp;greeting_reply=Leave+a+Reply+to+%25s&amp;color_scheme=light&amp;lang=en_US&amp;jetpack_version=11.9-a.1&amp;show_cookie_consent=10&amp;has_cookie_consent=0&amp;token_key=%3Bnormal%3B&amp;sig=6f84e6e68b8dc9fbb144d7813ea5528cfb99c578#parent=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F" name="jetpack_remote_comment" style="width:100%; height: 430px; border:0;" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups">
+                                        </iframe>
+                                        <!--[if !IE]><!-->
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+                                for (var i = 0; i < commentForms.length; i++) {
+                                    commentForms[i].allowTransparency = false;
+                                    commentForms[i].scrolling = 'no';
+                                }
+                            });
+                        </script>
+                        <!--<![endif]-->
+                                </form>
+            </div>
+    
+            
+            <input type="hidden" name="comment_parent" id="comment_parent" value=""/>
+    
+            
+        
+    </div>
+    
+    </div></div>	</main>
+    
+        <footer id="footer" class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container"><div data-column="socials">
+    <div class="ct-footer-socials" data-id="socials">
+    
+        
+            <div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
+                
+                
+                                
+                    <a href="https://www.facebook.com/thecleverprogrammer" data-network="facebook" aria-label="Facebook" rel="noopener">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+                    </svg>
+                </span><span class="ct-label">Facebook</span>				</a>
+                                
+                    <a href="https://www.instagram.com/amankharwal.official/" data-network="instagram" aria-label="Instagram" rel="noopener">
+                        <span class="ct-icon-container">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                        <circle cx="10" cy="10" r="3.3"></circle>
+                        <path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+                    </svg>
+                </span><span class="ct-label">Instagram</span>				</a>
+                                
+                    <a href="https://medium.com/@amankharwal" data-network="medium" aria-label="Medium" rel="noopener">
+                        <span class="ct-icon-container">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M2.4,5.3c0-0.2-0.1-0.5-0.3-0.7L0.3,2.4V2.1H6l4.5,9.8l3.9-9.8H20v0.3l-1.6,1.5c-0.1,0.1-0.2,0.3-0.2,0.4v11.2c0,0.2,0,0.3,0.2,0.4l1.6,1.5v0.3h-7.8v-0.3l1.6-1.6c0.2-0.2,0.2-0.2,0.2-0.4V6.5L9.4,17.9H8.8L3.6,6.5v7.6c0,0.3,0.1,0.6,0.3,0.9L6,17.6v0.3H0v-0.3L2.1,15c0.2-0.2,0.3-0.6,0.3-0.9V5.3z"></path>
+                    </svg>
+                </span><span class="ct-label">Medium</span>				</a>
+                                
+                    <a href="https://www.linkedin.com/company/thecleverprogrammer/" data-network="linkedin" aria-label="LinkedIn" rel="noopener">
+                        <span class="ct-icon-container">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+                    </svg>
+                </span><span class="ct-label">LinkedIn</span>				</a>
+                
+                
+                        </div>
+    
+        </div>
+    
+    </div><div data-column="ghost"></div></div></div><div data-row="bottom"><div class="ct-container" data-columns-divider="md:sm"><div data-column="copyright">
+    <div class="ct-footer-copyright" data-id="copyright">
+    
+        <p>Copyright © Thecleverprogrammer.com 2023 </p></div>
+    </div></div></div></footer></div>
+    
+    <!-- wpcom_wp_footer -->
+    <script defer="" id="bilmur" data-provider="wordpress.com" data-service="atomic" src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202307"></script>
+    <script id="jetpack-lazy-images-js-extra">
+    var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+    </script>
+    <script id="ct-scripts-js-extra">
+    var ct_localizations = {"ajax_url":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","nonce":"895fe3c16a","public_url":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/thecleverprogrammer.com\/wp-json\/","search_url":"https:\/\/thecleverprogrammer.com\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","search_live_results":"Search results","search_live_no_result":"No results","search_live_one_result":"You got %s result. Please press Tab to select it.","search_live_many_results":"You got %s results. Please press Tab to select one.","expand_submenu":"Expand dropdown menu","collapse_submenu":"Collapse dropdown menu","dynamic_js_chunks":[],"dynamic_styles":{"lazy_load":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css","search_lazy":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css"},"dynamic_styles_selectors":[]};
+    </script>
+    <script type="text/javascript" src="https://thecleverprogrammer.com/_static/??-eJytUNtOwzAM/SEyAxrlCfEpU5p4m9s4jmJnU/l6UigIIQEvPB3Z5+LkXIsLkg2zQUntRFlhQis+zMASW0KFlffB3FEqw6SwolNbOreb9Ob6c8KBcoCxUYpQzmKSN9gx5T+sGx4umKNU8M2EvRmFD8Yl/7I4Yn/qT4ykBtSTqmIwkuxkVKwXrP9/5sviW7idkbtqTBJmXUDNr0FjyzEhsP/8c28ltdiV01ouc/e6iiUtv/TiZ1JGe690G9yxvqli9zzz093wODzc72+H/Sugt7MN"></script>
+    
+            <!--[if IE]>
+            <script type="text/javascript">
+                if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+                    // window.location.reload() doesn't respect the Hash in IE
+                    window.location.hash = window.location.hash;
+                }
+            </script>
+            <![endif]-->
+            <script type="text/javascript">
+                (function () {
+                    var comm_par_el = document.getElementById( 'comment_parent' ),
+                        comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+                        frame = document.getElementById( 'jetpack_remote_comment' ),
+                        tellFrameNewParent;
+    
+                    tellFrameNewParent = function () {
+                        if ( comm_par ) {
+                            frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=175928511&postid=16997&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&jetpack_comments_nonce=63114ab3cd&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=11.9-a.1&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=6f84e6e68b8dc9fbb144d7813ea5528cfb99c578#parent=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+                        } else {
+                            frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=175928511&postid=16997&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&jetpack_comments_nonce=63114ab3cd&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=11.9-a.1&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=6f84e6e68b8dc9fbb144d7813ea5528cfb99c578#parent=https%3A%2F%2Fthecleverprogrammer.com%2F2022%2F03%2F09%2Fdata-science-projects%2F";
+                        }
+                    };
+    
+                    
+                    if ( 'undefined' !== typeof addComment ) {
+                        addComment._Jetpack_moveForm = addComment.moveForm;
+    
+                        addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+                            var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+                                cancelClick, cancel;
+    
+                            if ( false === returnValue ) {
+                                cancel = document.getElementById( 'cancel-comment-reply-link' );
+                                cancelClick = cancel.onclick;
+                                cancel.onclick = function () {
+                                    var cancelReturn = cancelClick.call( this );
+                                    if ( false !== cancelReturn ) {
+                                        return cancelReturn;
+                                    }
+    
+                                    if ( ! comm_par ) {
+                                        return cancelReturn;
+                                    }
+    
+                                    comm_par = 0;
+    
+                                    tellFrameNewParent();
+    
+                                    return cancelReturn;
+                                };
+                            }
+    
+                            if ( comm_par == parentId ) {
+                                return returnValue;
+                            }
+    
+                            comm_par = parentId;
+    
+                            tellFrameNewParent();
+    
+                            return returnValue;
+                        };
+                    }
+    
+                    
+                    // Do the post message bit after the dom has loaded.
+                    document.addEventListener( 'DOMContentLoaded', function () {
+                        var iframe_url = "https:\/\/jetpack.wordpress.com";
+                        if ( window.postMessage ) {
+                            if ( document.addEventListener ) {
+                                window.addEventListener( 'message', function ( event ) {
+                                    var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+                                    if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+                                        return;
+                                    }
+                                    frame.style.height = event.data + 'px';
+                                });
+                            } else if ( document.attachEvent ) {
+                                window.attachEvent( 'message', function ( event ) {
+                                    var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+                                    if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+                                        return;
+                                    }
+                                    frame.style.height = event.data + 'px';
+                                });
+                            }
+                        }
+                    })
+    
+                })();
+            </script>
+    
+                <script src="https://stats.wp.com/e-202307.js" defer=""></script>
+        <script>
+            _stq = window._stq || [];
+            _stq.push([ 'view', {v:'ext',blog:'175928511',post:'16997',tz:'5.5',srv:'thecleverprogrammer.com',hp:'atomic',ac:'2',amp:'0',j:'1:11.9-a.1'} ]);
+            _stq.push([ 'clickTrackerInit', '175928511', '16997' ]);
+        </script>
+    
+    
+    <script type='text/javascript' style='display:none;' async>
+    </script>
+    
+    <script type="text/javascript" data-cfasync="false"></script></body></html>
